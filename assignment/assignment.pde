@@ -35,4 +35,5 @@ void draw() {
   text(team1name +"\t"+ team1Wins +"\t"+ team1Losses +"\t"+ team1Overtimes +"\t"+ team1Points ,0,0);
   text(team2name +"\t"+ team2Wins +"\t"+ team2Losses +"\t"+ team2Overtimes +"\t"+ team2Points ,0,0);
   text(team3name +"\t"+ team3Wins +"\t"+ team3Losses +"\t"+ team3Overtimes +"\t"+ team3Points ,0,0);
+ text("hi",600,300);
 }
