@@ -28,4 +28,11 @@ void setup() {
 
 void draw() {
 
+  text("The first team is called the "+ team1name ,0,0);
+  text("The second team is called the "+ team2name ,0,0);
+  text("The third team is called the "+ team3name ,0,0);
+  text("      Team \t Wins \t Losses \t Overtimes    Points" ,0,0);
+  text(team1name +"\t"+ team1Wins +"\t"+ team1Losses +"\t"+ team1Overtimes +"\t"+ team1Points ,0,0);
+  text(team2name +"\t"+ team2Wins +"\t"+ team2Losses +"\t"+ team2Overtimes +"\t"+ team2Points ,0,0);
+  text(team3name +"\t"+ team3Wins +"\t"+ team3Losses +"\t"+ team3Overtimes +"\t"+ team3Points ,0,0);
 }
