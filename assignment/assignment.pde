@@ -5,6 +5,10 @@
  * This code recreates the formatting text output assignment in drawings.
  * 
  */
+    PFont myFont;
+    
+ 
+ 
   String team1name = "Toronto Maple Leafs";
   String team2name = "Pittsburgh Penguins";
   String team3name = "Dallas Stars";
@@ -24,16 +28,16 @@
 void setup() {
   size(1200,600);
   background(80,12,252);
+    myFont = createFont("Georgia", 32);
 }
 
 void draw() {
 
-  text("The first team is called the "+ team1name ,0,0);
-  text("The second team is called the "+ team2name ,0,0);
-  text("The third team is called the "+ team3name ,0,0);
-  text("      Team \t Wins \t Losses \t Overtimes    Points" ,0,0);
-  text(team1name +"\t"+ team1Wins +"\t"+ team1Losses +"\t"+ team1Overtimes +"\t"+ team1Points ,0,0);
-  text(team2name +"\t"+ team2Wins +"\t"+ team2Losses +"\t"+ team2Overtimes +"\t"+ team2Points ,0,0);
-  text(team3name +"\t"+ team3Wins +"\t"+ team3Losses +"\t"+ team3Overtimes +"\t"+ team3Points ,0,0);
- text("hi",600,300);
+  textFont(myFont);
+
+  text(" Team          \t Wins \t Losses \t Overtimes \t Points" ,0,50);
+  text(team1name +"\t"+ team1Wins +"\t"+ team1Losses +"\t"+ team1Overtimes +"\t"+ team1Points ,0,150);
+  text(team2name +"\t"+ team2Wins +"\t"+ team2Losses +"\t"+ team2Overtimes +"\t"+ team2Points ,0,250);
+  text(team3name +"\t"+ team3Wins +"\t"+ team3Losses +"\t"+ team3Overtimes +"\t"+ team3Points ,0,350);
+
 }
