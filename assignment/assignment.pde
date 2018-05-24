@@ -35,9 +35,9 @@ void draw() {
 
   textFont(myFont);
 
-  text(" Team          \t Wins \t Losses \t Overtimes \t Points" ,0,50);
-  text(team1name +"\t"+ team1Wins +"\t"+ team1Losses +"\t"+ team1Overtimes +"\t"+ team1Points ,0,150);
-  text(team2name +"\t"+ team2Wins +"\t"+ team2Losses +"\t"+ team2Overtimes +"\t"+ team2Points ,0,250);
-  text(team3name +"\t"+ team3Wins +"\t"+ team3Losses +"\t"+ team3Overtimes +"\t"+ team3Points ,0,350);
+  text(" Team                        \t Wins     \t Losses     \t Overtimes      \t Points" ,0,50);
+  text(team1name +"\t     "+ team1Wins +"\t          "+ team1Losses +"\t                 "+ team1Overtimes +"\t                "+ team1Points ,0,150);
+  text(team2name +"\t     "+ team2Wins +"\t          "+ team2Losses +"\t                  "+ team2Overtimes +"\t                "+ team2Points ,0,250);
+  text(team3name +"\t                  "+ team3Wins +"\t          "+ team3Losses +"\t                  "+ team3Overtimes +"\t                 "+ team3Points ,0,350);
 
 }
