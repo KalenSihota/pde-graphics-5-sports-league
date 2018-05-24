@@ -8,6 +8,7 @@
  
 void setup() {
   size(1200,600);
+  background(80,12,252);
 }
 
 void draw() {
