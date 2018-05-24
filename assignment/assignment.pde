@@ -5,9 +5,9 @@
  * This code recreates the formatting text output assignment in drawings.
  * 
  */
-    PFont myFont;
+  PFont myFont;
     
- 
+  PImage Arena;
  
   String team1name = "Toronto Maple Leafs";
   String team2name = "Pittsburgh Penguins";
@@ -29,10 +29,14 @@ void setup() {
   size(1200,600);
   background(80,12,252);
     myFont = createFont("Georgia", 32);
+  
+    Arena=loadImage("arena.jpg");
 }
 
 void draw() {
 
+  image(Arena,0,0);
+  
   textFont(myFont);
 
   text(" Team                        \t Wins     \t Losses     \t Overtimes      \t Points" ,0,50);
