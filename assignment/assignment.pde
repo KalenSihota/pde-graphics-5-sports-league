@@ -6,7 +6,9 @@
  * 
  */
   PFont myFont;
-    
+  float offset = 0;
+  float easing = 0.05;
+  
   PImage Arena;
  
   String team1name = "Toronto Maple Leafs";
@@ -36,7 +38,10 @@ void setup() {
 void draw() {
 
   image(Arena,0,0);
-  
+   float dx = (mouseX-Arena.width/2) - offset;
+  offset += dx * easing; 
+  tint(255, 127);
+    image(Arena, offset, 0);
   textFont(myFont);
 
   text(" Team                        \t Wins     \t Losses     \t Overtimes      \t Points" ,0,50);
